@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Erik Cruz">
+        <meta name="description" content="contact page for swiss valley resort">
+        <title>Swiss Valley Resort | Contact</title>
+        <link rel="icon" href="images/favicon_gGv_icon.ico">
+        <link rel="stylesheet" href="https://use.typekit.net/uut2xyp.css">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <header>   
+            <div>
+                <h1><a href="index.html">Swiss Valley Resort</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Accommodations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <img src="images/swiss-valley.jpg" alt="A river flowing through a valley in the mountains" width="1440" height="560">
+
+        </header>
+
+        <main>
+            <div id="contact">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                <p>Required fields marked with a *</p>
+                <img src="images/swiss-sunset.jpg" alt="chalet by the lake with mountains in back" width="710" height="270">
+            </div>
+            <div id="form">
+                <form>
+                    <div class="container">
+                        <div>
+                            <label for="name">Full Name *</label>
+                            <input type="text" name="name" id="name" placeholder="John Doe" required>
+
+                            <br>
+
+                            <label for="email">Email *</label>
+                            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com"  required>
+
+                            <br>
+
+                            <label for="tel">Phone Number *</label>
+                            <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                        </div>
+                        <div>
+                            <label>Preferred Contact Method</label>
+                            <div id="radio">
+                                <label for="mail">Email</label>
+                                <input type="radio" name="method" id="mail" value="Email" required checked>
+                                <label for="phone">Phone</label>
+                                <input type="radio" name="method" id="phone" value="Phone" required>
+                            </div>
+                            <br>
+                            
+                            <label for="comment">Comments</label>
+                            <textarea name="comment" id="comment" rows="5" cols="20" maxlength="250"></textarea>
+
+                            <br>
+                            <input type="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>      
+        </main>
+
+        <footer>
+            <p>Copyright &copy;2023 - Swiss Valley Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+
+
+    </body>
+
+
+
+</html>
